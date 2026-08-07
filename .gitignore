@@ -1,40 +1,48 @@
 ```
 # Dependencies
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+coverage/
+.nyc_output/
 
 # Environment variables
 .env
 .env.local
 .env.*
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
+!.env.example
 
 # IDE files
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 
-# Python cache
+# Python specific (if applicable)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
-# Build outputs
-dist/
-build/
-target/
-
-# Coverage reports
-coverage/
-htmlcov/
+.Python
+*.so
 .coverage
+.coverage.*
 
-# Local configuration
+# Logs
+*.log
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 ```

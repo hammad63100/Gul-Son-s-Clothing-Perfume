@@ -18,6 +18,14 @@ const AuthService = require('./services/authService');
 
 // Import routes
 const authRoutes = require('./routes/authRoutes');
+const productRoutes = require('./routes/productRoutes');
+const inventoryRoutes = require('./routes/inventoryRoutes');
+const customerRoutes = require('./routes/customerRoutes');
+const orderRoutes = require('./routes/orderRoutes');
+const posRoutes = require('./routes/posRoutes');
+const marketingRoutes = require('./routes/marketingRoutes');
+const accountingRoutes = require('./routes/accountingRoutes');
+const reportRoutes = require('./routes/reportRoutes');
 
 // Initialize Express app
 const app = express();
@@ -67,6 +75,14 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/products', productRoutes);
+app.use('/api/inventory', inventoryRoutes);
+app.use('/api/customers', customerRoutes);
+app.use('/api/orders', orderRoutes);
+app.use('/api/pos', posRoutes);
+app.use('/api/marketing', marketingRoutes);
+app.use('/api/accounting', accountingRoutes);
+app.use('/api/reports', reportRoutes);
 
 // Example root endpoint
 app.get('/', (req, res) => {
